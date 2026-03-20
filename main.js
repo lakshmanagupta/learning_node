@@ -1,5 +1,6 @@
 const codeFromSingleExportFile = require("./fileWithSingleExport.js"); // this will import the fileWithSingleExport.js and execute it
 const codeFromMultipleExportFile = require("./fileWithMultipleExports.js"); // this will import the fileWithMultipleExports.js and execute it
+const { calculateSum, calculateMultiplication } = require("./calcMethods");
 
 var a = " Welcome to JavaScript! ";
 var myName = "Lakshman";
@@ -29,3 +30,6 @@ console.log(
   "Result of calculateSum function from fileWithSingleExport",
   codeFromSingleExportFile(20, 30),
 );
+
+// calcAdd and calcMul from the calMethods index file
+console.log("calcAdd and calcMul", calculateSum(100, 101), calculateMultiplication(100, 19191));

@@ -1,0 +1,4 @@
+{
+  "//": "the below type will allow us to use ES6 import/export syntax in our Node.js project, supported values are 'commonjs' and 'module'",
+  "type": "commonjs"
+}
